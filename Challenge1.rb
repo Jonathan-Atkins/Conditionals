@@ -1,11 +1,10 @@
-#Challenge 1
-
-def even_length?(str)
+def favorite_food(str)
   str.length.even?
 end
 
-input = "Canes is my favorite fast foood"
-puts even_length?(input)
+input = "My favorite food is Pizza"
+puts favorite_food(input)
+
 
 
 # #Challenge 1 & 2

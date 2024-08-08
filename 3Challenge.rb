@@ -1,13 +1,22 @@
 
-# puts "What hour is it?"
-# hour = gets.chomp.to_i
+def time_of_day(hour)
+    if hour >= 4  && hour < 12
+        "Good morning!"
+    elsif hour >= 12 && hour < 17
+        "Good afternoon!"
+    elsif hour >= 17 && hour < 20
+        "Good evening!"
+    elsif hour > 0 && hour < 25
+        "Good Night."
+    else hour <=0 || hour >= 25
+        "Please enter a valid number"
+    end
+end
 
-# if hour > 0 && hour < 12
-#   puts "Good morning!"
-# elsif hour > 0 && hour < 17
-#   puts "Good afternoon!"
-# elsif hour >= 17 && hour < 24
-#   puts "Good evening!"
-# else hour <= 0 || hour >= 25
-#     puts "Please enter a number between 1 and 24."
-# end
+puts time_of_day(4)
+puts time_of_day(13.30)
+puts time_of_day(1)
+puts time_of_day(22)
+puts time_of_day(0)
+puts time_of_day(25)
+
